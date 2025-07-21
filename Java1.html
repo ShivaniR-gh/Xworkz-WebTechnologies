@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Assignment</title>
+</head>
+<body>
+  <center><h1><mark>Java Assignment</mark></h1></center>
+<img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" height="250 px" width="400px">
+  
+<img src="new.jpg" height="250 px" width="400px"><section>
+    <h2><u><mark>1. Literals (Fixed Values in Code)</mark></u></h2>
+    <p><strong>Definition:</strong> Literals are fixed values assigned directly to variables in the program. They are hard-coded constants and are interpreted literally by the Java compiler.</p>
+    <p><strong>Explanation:</strong> They represent values like numbers, characters, text, and logical values in your Java code. Whenever you assign a value like <b>10</b>, <b>'A'</b>, or <b>"Java"</b> to a variable, you are using a literal.</p>
+    <p><strong>Example:</strong></p>
+    <pre><code>int x = 100; // Integer literal</code></pre>
+  </section>
+
+  <section>
+    <h2><u><mark>2. Keywords</mark></u></h2>
+    <p><strong>Definition:</strong> Keywords are predefined, reserved words in Java. Each keyword has a specific purpose and cannot be used as names for variables, methods, or classes.</p>
+    <p><strong>Explanation:</strong> They help Java understand what operation or behavior you are trying to implement, like declaring variables, loops, methods, classes, etc.</p>
+    <p><strong>Examples:</strong></p>
+    <pre>
+class, interface       → Declaring classes and interfaces
+if, else, switch       → Control flow
+try, catch, finally    → Exception handling
+static, void, new      → Object and method handling
+    </pre>
+  </section>
+
+  <section>
+    <h2><u><mark>3. Identifiers</mark></u></h2>
+    <p><strong>Definition:</strong> Identifiers are names used to identify classes, methods, variables, objects, etc.</p>
+    <p><strong>Explanation:</strong> They help label and reference the components in your program. You choose them to make your code readable and meaningful.</p>
+    <p><strong>Rules:</strong></p>
+    <ul>
+      <li>Can't be Java keywords</li>
+      <li>Can start with a letter, <b>$</b>, or <b>_</b></li>
+      <li>Case-sensitive</li>
+    </ul>
+    <p><strong>Examples:</strong></p>
+    <pre>
+Student, employeeId      → Valid identifiers
+_temp, $data             → Valid but not commonly used
+int, class               → Invalid (keywords)
+    </pre>
+  </section>
+
+  <section>
+    <h2><u><mark>4. Arrays</mark></u></h2>
+    <p><strong>Definition:</strong> An array is a collection of elements of the same data type, stored at contiguous memory locations.</p>
+    <p><strong>Explanation:</strong> Arrays allow you to store multiple values of the same type in a single variable, instead of declaring separate variables.</p>
+    <pre>
+int[] numbers = {1, 2, 3, 4, 5};
+    </pre>
+  </section>
+
+  <section>
+    <h2><u><mark>5. Methods (All Scenarios)</mark></u></h2>
+    <p><strong>Definition:</strong> A method is a block of code that performs a specific task. Methods improve code reusability and organization.</p>
+    <p><strong>Explanation:</strong> Java methods can be static or non-static, with or without parameters, and may return a value or not. You can also overload methods.</p>
+    <pre>
+Type          Example                            Description
+Normal        void greet()                       Regular method
+Static        static int add(int a, int b)       Belongs to class
+Overloaded    void show(int); void show(String); Same name, diff params
+Varargs       void display(String... names)      Accepts variable arguments
+Recursion     int fact(int n) { return n==0 ? 1 : n * fact(n-1); }
+    </pre>
+  </section>
+
+  <section>
+    <h2><u><mark>6. Operators</mark></u></h2>
+    <p><strong>Definition:</strong> Operators are symbols used to perform operations like addition, comparison, assignment, and more on variables and values.</p>
+    <p><strong>Explanation:</strong> Operators allow you to write logic and expressions in your program.</p>
+    <pre>
+Category     Examples         Use
+Arithmetic   +, -, *, /, %     Math operations
+Relational   ==, !=, >, <      Compare values
+Logical      &&, ||, !         Logical conditions
+Bitwise      &, |, ^, ~        Binary-level operations
+Shift        <<, >>, >>>       Bit shifting
+Assignment   =, +=, -=         Assigning values
+Ternary      a > b ? a : b     Short if-else
+Instanceof   obj instanceof String   Check object type
+    </pre>
+  </section>
+
+  <section>
+    <h2><u><mark>7. Looping Techniques</mark></u></h2>
+    <p><strong>Definition:</strong> Loops are control structures that repeat a block of code as long as a condition is true.</p>
+    <p><strong>Explanation:</strong> They are used for repetition, especially when the number of iterations is known or condition-based.</p>
+    <pre>
+Type            Syntax                             Description
+for             for (int i = 0; i < n; i++)        Fixed iterations
+while           while(condition)                   Unknown iterations
+do-while        do { ... } while(condition);       Runs at least once
+Enhanced for    for (int x : arr)                  Arrays/collections
+Nested          for (...) { for (...) { ... } }    Loop inside a loop
+    </pre>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Concepts Revision</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    section {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 1000px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 10px;
+      overflow-x: auto;
+      border-left: 5px solid #333;
+    }
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Java Core Concepts – Quick Revision</h1>
+</header>
+
+<section id="literals">
+  <h2>1. Literals</h2>
+  <p>Literals are fixed values assigned to variables. They represent constant values in Java programs.</p>
+  <ul>
+    <li>Integer Literal: <code>int age = 25;</code></li>
+    <li>Floating Point Literal: <code>float pi = 3.14f;</code></li>
+    <li>Character Literal: <code>char grade = 'A';</code></li>
+    <li>String Literal: <code>String name = "Shivani";</code></li>
+    <li>Boolean Literal: <code>boolean isValid = true;</code></li>
+  </ul>
+</section>
+
+<section id="keywords">
+  <h2>2. Keywords</h2>
+  <p>Keywords are reserved words in Java that have predefined meanings.</p>
+  <p><strong>Examples:</strong> <code>class</code>, <code>if</code>, <code>else</code>, <code>return</code>, <code>void</code>, <code>static</code>, etc.</p>
+  <p>You cannot use keywords as identifiers (variable or method names).</p>
+</section>
+
+<section id="identifiers">
+  <h2>3. Identifiers</h2>
+  <p>Identifiers are the names used for classes, variables, methods, etc.</p>
+  <ul>
+    <li>Must start with a letter, underscore (_), or dollar sign ($).</li>
+    <li>Cannot start with digits or use keywords.</li>
+    <li>Are case-sensitive.</li>
+  </ul>
+  <pre>
+class Student {
+    int rollNumber; // Identifier
+    void displayName() {
+        // Method identifier
+    }
+}
+  </pre>
+</section>
+
+<section id="arrays">
+  <h2>4. Arrays</h2>
+  <p>Arrays are used to store multiple values of the same type in a single variable.</p>
+  <pre>
+int[] numbers = {1, 2, 3, 4, 5};
+String[] names = new String[3];
+names[0] = "Alice";
+names[1] = "Bob";
+names[2] = "Charlie";
+  </pre>
+</section>
+
+<section id="methods">
+  <h2>5. Methods</h2>
+  <p>Methods define a block of code that can be executed when called. Methods support modular and reusable code.</p>
+
+  <h3>Types of Methods:</h3>
+  <ul>
+    <li><strong>Void Method (No return):</strong></li>
+    <pre>
+public static void greet() {
+    System.out.println("Hello!");
+}
+    </pre>
+
+    <li><strong>Return Method:</strong></li>
+    <pre>
+public static int add(int a, int b) {
+    return a + b;
+}
+    </pre>
+
+    <li><strong>Method Overloading:</strong></li>
+    <pre>
+public static void show(String name) {
+    System.out.println(name);
+}
+
+public static void show(int age) {
+    System.out.println(age);
+}
+    </pre>
+
+    <li><strong>Static vs Non-Static Methods:</strong></li>
+    <pre>
+public static void staticMethod() {
+    System.out.println("Static method");
+}
+
+public void instanceMethod() {
+    System.out.println("Instance method");
+}
+    </pre>
+  </ul>
+</section>
+
+<section id="operators">
+  <h2>6. Operators</h2>
+  <p>Java provides various operators to perform operations on variables and values.</p>
+
+  <ul>
+    <li><strong>Arithmetic:</strong> +, -, *, /, %</li>
+    <li><strong>Relational:</strong> ==, !=, >, &lt;, &gt;=, &lt;=</li>
+    <li><strong>Logical:</strong> &&, ||, !</li>
+    <li><strong>Assignment:</strong> =, +=, -=, *=, /=</li>
+    <li><strong>Unary:</strong> ++, --, +, -</li>
+    <li><strong>Bitwise:</strong> &, |, ^, ~, &lt;&lt;, &gt;&gt;</li>
+  </ul>
+</section>
+
+<section id="loops">
+  <h2>7. Looping Techniques</h2>
+  <p>Loops are used to execute a block of code multiple times.</p>
+
+  <h3>Types of Loops:</h3>
+  <ul>
+    <li><strong>For Loop:</strong></li>
+    <pre>
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+    </pre>
+
+    <li><strong>While Loop:</strong></li>
+    <pre>
+int i = 0;
+while (i < 5) {
+    System.out.println(i);
+    i++;
+}
+    </pre>
+
+    <li><strong>Do-While Loop:</strong></li>
+    <pre>
+int i = 0;
+do {
+    System.out.println(i);
+    i++;
+} while (i < 5);
+    </pre>
+
+    <li><strong>For-Each Loop (for arrays):</strong></li>
+    <pre>
+String[] colors = {"Red", "Green", "Blue"};
+for (String color : colors) {
+    System.out.println(color);
+}
+    </pre>
+  </ul>
+</section>
+
+</body>
+</html>
